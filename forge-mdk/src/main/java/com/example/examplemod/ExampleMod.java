@@ -2,7 +2,6 @@ package com.example.drugsmod;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -26,12 +25,6 @@ public class ExampleMod {
     public static final RegistryObject<Item> XANAX = ITEMS.register("xanax", () -> new Item(new Item.Properties()));
 
     public ExampleMod() {
-        // Get the mod event bus
-        var modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        
-        // Register our items
-        ITEMS.register(modEventBus);
-        
         LOGGER.info("Drugs Mod loaded successfully!");
         LOGGER.info("Registered {} drug items", 7);
     }
