@@ -15,7 +15,7 @@ public class ExampleMod {
     // Create a Deferred Register to hold Items
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "drugsmod");
 
-    // Register some basic drug items
+    // Register items that have textures and models available
     public static final RegistryObject<Item> WEED = ITEMS.register("weed", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> COCAINE = ITEMS.register("cocaine", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HEROIN = ITEMS.register("heroin", () -> new Item(new Item.Properties()));
@@ -23,9 +23,15 @@ public class ExampleMod {
     public static final RegistryObject<Item> LSD = ITEMS.register("lsd", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> ECSTASY = ITEMS.register("ecstasy", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> XANAX = ITEMS.register("xanax", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AMPHETAMINE = ITEMS.register("amphetamine", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> CRACK = ITEMS.register("crack", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> FENTANYL = ITEMS.register("fentanyl", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> JOINT = ITEMS.register("joint", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PIPE = ITEMS.register("pipe", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> KETAMINE = ITEMS.register("ketamine", () -> new Item(new Item.Properties()));
 
     public ExampleMod() {
         LOGGER.info("Drugs Mod loaded successfully!");
-        LOGGER.info("Registered {} drug items", 7);
+        LOGGER.info("Registered {} drug items", 12);
     }
 }
