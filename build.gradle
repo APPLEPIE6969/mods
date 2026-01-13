@@ -12,26 +12,12 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 repositories {
     mavenCentral()
+    maven { url 'https://maven.minecraftforge.net' }
 }
 
 dependencies {
-    // Add any external dependencies here
+    // Add Forge dependencies manually
     implementation 'org.jetbrains:annotations:20.1.0'
-}
-
-// Exclude Forge-specific files from compilation
-sourceSets {
-    main {
-        java {
-            exclude '**/blocks/**'
-            exclude '**/blockentity/**'
-            exclude '**/world/gen/**'
-            exclude '**/loot/**'
-            exclude '**/effects/**'
-            exclude '**/init/**'
-            exclude '**/DrugsMod.java'
-        }
-    }
 }
 
 jar {
@@ -48,27 +34,7 @@ jar {
         ])
     }
     
-    // Include only resources, exclude problematic files
-    from('src/main/resources') {
-        exclude '**/META-INF/**'
-    }
-}
-
-// Task to create a basic mod JAR
-task createModJar(type: Jar) {
+    // Include compiled classes and resources
     from sourceSets.main.output
-    archiveClassifier.set('mod')
-    manifest {
-        attributes(
-            'Specification-Title': 'drugsmod',
-            'Specification-Vendor': 'examplemod',
-            'Specification-Version': '1',
-            'Implementation-Title': project.name,
-            'Implementation-Version': project.version,
-            'Implementation-Vendor': 'examplemod',
-            'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
-        )
-    }
+    from('src/main/resources')
 }
-
-build.dependsOn createModJar
