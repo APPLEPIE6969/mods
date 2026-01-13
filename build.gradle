@@ -12,11 +12,9 @@ java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 repositories {
     mavenCentral()
-    maven { url 'https://maven.minecraftforge.net' }
 }
 
 dependencies {
-    // Add Forge dependencies manually
     implementation 'org.jetbrains:annotations:20.1.0'
 }
 
