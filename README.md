@@ -48,13 +48,16 @@ This mod contains mature themes including drug use, addiction, and overdose. It 
 ## 📋 Requirements
 - **Minecraft**: 1.20.1 - 1.21.11
 - **Forge**: 47.2.0 or higher
+- **Paper**: 1.20.1 - 1.21.11
+- **Spigot/Bukkit**: 1.20.1 - 1.21.11
+- **Fabric**: 0.14.0+ (with appropriate loader)
 - **Java**: 17 or higher
 
 ## 📦 Installation
-1. Install Forge for your Minecraft version
+1. Install your preferred mod loader (Forge, Paper, Spigot, Fabric)
 2. Download the mod JAR file
 3. Place the JAR in your `mods` folder
-4. Launch Minecraft with Forge
+4. Launch Minecraft with your chosen loader
 
 ## 🎮 Getting Started
 1. **Gather ingredients** from world generation or loot chests

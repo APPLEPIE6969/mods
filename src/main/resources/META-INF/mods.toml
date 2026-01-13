@@ -1,7 +1,7 @@
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[47,)"
 license="MIT"
-issueTrackerURL="https://github.com/yourname/drugsmod/issues"
+issueTrackerURL="https://github.com/APPLEPIE6969/mods/issues"
 
 [[mods]]
 modId="drugsmod"
@@ -10,19 +10,19 @@ displayName="Drugs Mod"
 logoFile="logo.png"
 authors="YourName"
 description='''
-A mod that adds various drugs and smokable items to Minecraft.
+A comprehensive Minecraft mod that adds realistic drugs, smokable items, and crafting systems with proper chemical synthesis and dangerous combination effects.
 '''
 
 [[dependencies.drugsmod]]
 modId="forge"
 mandatory=true
-versionRange="[43,)"
+versionRange="[47,)"
 ordering="NONE"
 side="BOTH"
 
 [[dependencies.drugsmod]]
 modId="minecraft"
 mandatory=true
-versionRange="[1.19.2,1.20)"
+versionRange="[1.20.1,1.21.12)"
 ordering="NONE"
 side="BOTH"

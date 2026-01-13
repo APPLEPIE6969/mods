@@ -32,9 +32,12 @@
 ### Technical
 - **Minecraft**: 1.20.1 - 1.21.11
 - **Forge**: 47.2.0+
+- **Paper**: 1.20.1 - 1.21.11
+- **Spigot/Bukkit**: 1.20.1 - 1.21.11
+- **Fabric**: 0.14.0+
 - **Java**: 17+
 - **License**: MIT
-- **Compatibility**: Supports all versions from 1.20.1 through 1.21.11
+- **Compatibility**: Supports all major mod loaders and server types
 
 ---
 
