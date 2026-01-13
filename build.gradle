@@ -1,0 +1,74 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'maven-publish'
+}
+
+version = '1.0.0'
+group = 'com.example.drugsmod'
+archivesBaseName = 'drugsmod'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Add any external dependencies here
+    implementation 'org.jetbrains:annotations:20.1.0'
+}
+
+// Exclude Forge-specific files from compilation
+sourceSets {
+    main {
+        java {
+            exclude '**/blocks/**'
+            exclude '**/blockentity/**'
+            exclude '**/world/gen/**'
+            exclude '**/loot/**'
+            exclude '**/effects/**'
+            exclude '**/init/**'
+            exclude '**/DrugsMod.java'
+        }
+    }
+}
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    manifest {
+        attributes([
+            "Specification-Title": "drugsmod",
+            "Specification-Vendor": "examplemod",
+            "Specification-Version": "1",
+            "Implementation-Title": project.name,
+            "Implementation-Version": project.jar.archiveVersion,
+            "Implementation-Vendor" :"examplemod",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+    
+    // Include only resources, exclude problematic files
+    from('src/main/resources') {
+        exclude '**/META-INF/**'
+    }
+}
+
+// Task to create a basic mod JAR
+task createModJar(type: Jar) {
+    from sourceSets.main.output
+    archiveClassifier.set('mod')
+    manifest {
+        attributes(
+            'Specification-Title': 'drugsmod',
+            'Specification-Vendor': 'examplemod',
+            'Specification-Version': '1',
+            'Implementation-Title': project.name,
+            'Implementation-Version': project.version,
+            'Implementation-Vendor': 'examplemod',
+            'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        )
+    }
+}
+
+build.dependsOn createModJar

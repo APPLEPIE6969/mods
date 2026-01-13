@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+issueTrackerURL="https://github.com/yourname/drugsmod/issues"
+
+[[mods]]
+modId="drugsmod"
+version="1.0.0"
+displayName="Drugs Mod"
+logoFile="logo.png"
+authors="YourName"
+description='''
+A mod that adds various drugs and smokable items to Minecraft.
+'''
+
+[[dependencies.drugsmod]]
+modId="forge"
+mandatory=true
+versionRange="[43,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.drugsmod]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.19.2,1.20)"
+ordering="NONE"
+side="BOTH"
