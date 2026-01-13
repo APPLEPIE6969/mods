@@ -16,7 +16,7 @@ A comprehensive Minecraft mod that adds realistic drugs, smokable items, and cra
 [[dependencies.drugsmod]]
 modId="forge"
 mandatory=true
-versionRange="[47,)"
+versionRange="[47.2.0,61.0.6]"
 ordering="NONE"
 side="BOTH"
 
