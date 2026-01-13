@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Mod("drugsmod")
+@Mod.EventBusSubscriber(modid = "drugsmod", bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ExampleMod {
     private static final Logger LOGGER = LoggerFactory.getLogger(ExampleMod.class);
     
