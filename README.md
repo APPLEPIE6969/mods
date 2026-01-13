@@ -82,15 +82,12 @@ Morning Glory Seeds + Lithium + Sulfuric Acid → LSD
 
 ## ⚠️ Dangerous Combinations
 - **Cocaine + Alcohol**: Forms cocaethylene (highly toxic)
-- **Heroin + Alcohol**: Respiratory depression and overdose
-- **Meth + MDMA**: Serotonin syndrome (potentially fatal)
-- **Multiple stimulants**: Heart failure risk
-- **Multiple depressants**: Complete respiratory failure
 
 ## 🤝 Support
-- **Discord**: [Join our Discord](https://discord.gg/yourdiscord)
-- **Issues**: [Report bugs on GitHub](https://github.com/yourname/drugsmod/issues)
-- **Wiki**: [Mod documentation](https://github.com/yourname/drugsmod/wiki)
+- **Discord**: [Join our Discord](https://discord.gg/cC2dByvu2h)
+- **GitHub**: [View Source Code](https://github.com/APPLEPIE6969/mods)
+- **Issues**: [Report bugs on GitHub](https://github.com/APPLEPIE6969/mods/issues)
+- **Wiki**: [Mod documentation](https://github.com/APPLEPIE6969/mods/wiki)
 
 ## 📄 License
 This mod is licensed under the MIT License. See [LICENSE](LICENSE) for details.
