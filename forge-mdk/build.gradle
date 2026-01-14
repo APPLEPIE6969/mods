@@ -147,10 +147,10 @@ dependencies {
     // in your development environment, helping you catch issues early.
     annotationProcessor 'net.minecraftforge:eventbus-validator:7.0-beta.12'
 
-    // JEI dependency for recipe display
-    compileOnly "mezz.jei:jei-17.0.0.34-common-api"
-    compileOnly "mezz.jei:jei-17.0.0.34-forge-api"
-    runtimeOnly "mezz.jei:jei-17.0.0.34-forge"
+    // JEI dependency for recipe display (temporarily disabled for build)
+    // compileOnly "mezz.jei:jei-17.0.0.34-common-api"
+    // compileOnly "mezz.jei:jei-17.0.0.34-forge-api"
+    // runtimeOnly "mezz.jei:jei-17.0.0.34-forge"
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
